@@ -22,7 +22,7 @@ def test_add_no_params():
     with pytest.raises(TypeError):
         slack.add()
 
-'''def test_get_conversations_list_success():
+def test_get_conversations_list_success():
     """Test case for successfully getting response
     """
     base_url = "https://slack.com/api"
@@ -34,7 +34,7 @@ def test_get_conversations_list_fail():
     """
     base_url = "https://slack.com/apl"
     response = slack.get_conversations_list(base_url)
-    assert response.status_code == 404'''
+    assert response.status_code == 404
 
 #import pdb; pdb.set_trace()
 
