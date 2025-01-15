@@ -1,0 +1,155 @@
+2025-01-15 16:01:50,701-DEBUG-src.fetch-URL = https://slack.com/api/conversations.list
+2025-01-15 16:01:50,701-DEBUG-src.fetch-Status code = 200
+2025-01-15 16:01:50,702-INFO-src.fetch-JSON Data = {
+    "ok": true,
+    "channels": [
+        {
+            "id": "C086YFY7L4W",
+            "name": "all-sacumen",
+            "is_channel": true,
+            "is_group": false,
+            "is_im": false,
+            "is_mpim": false,
+            "is_private": false,
+            "created": 1735880164,
+            "is_archived": false,
+            "is_general": true,
+            "unlinked": 0,
+            "name_normalized": "all-sacumen",
+            "is_shared": false,
+            "is_org_shared": false,
+            "is_pending_ext_shared": false,
+            "pending_shared": [],
+            "context_team_id": "T086QJLMH2T",
+            "updated": 1735880193380,
+            "parent_conversation": null,
+            "creator": "U087HR246Q1",
+            "is_ext_shared": false,
+            "shared_team_ids": [
+                "T086QJLMH2T"
+            ],
+            "pending_connected_team_ids": [],
+            "is_member": false,
+            "topic": {
+                "value": "",
+                "creator": "",
+                "last_set": 0
+            },
+            "purpose": {
+                "value": "Share announcements and updates about company news, upcoming events, or teammates who deserve some kudos. \u2b50",
+                "creator": "U087HR246Q1",
+                "last_set": 1735880164
+            },
+            "properties": {
+                "canvas": {
+                    "file_id": "F086YFY8Q8N",
+                    "is_empty": false,
+                    "quip_thread_id": "ADC9AASUzBD"
+                },
+                "use_case": "welcome"
+            },
+            "previous_names": [
+                "all-slack"
+            ],
+            "num_members": 5
+        },
+        {
+            "id": "C0877L7ATQU",
+            "name": "onboarding-kt",
+            "is_channel": true,
+            "is_group": false,
+            "is_im": false,
+            "is_mpim": false,
+            "is_private": false,
+            "created": 1735880439,
+            "is_archived": false,
+            "is_general": false,
+            "unlinked": 0,
+            "name_normalized": "onboarding-kt",
+            "is_shared": false,
+            "is_org_shared": false,
+            "is_pending_ext_shared": false,
+            "pending_shared": [],
+            "context_team_id": "T086QJLMH2T",
+            "updated": 1735880440278,
+            "parent_conversation": null,
+            "creator": "U087HR246Q1",
+            "is_ext_shared": false,
+            "shared_team_ids": [
+                "T086QJLMH2T"
+            ],
+            "pending_connected_team_ids": [],
+            "is_member": false,
+            "topic": {
+                "value": "",
+                "creator": "",
+                "last_set": 0
+            },
+            "purpose": {
+                "value": "This channel is for everything #onboarding-kt. Hold meetings, share docs, and make decisions together with your team.",
+                "creator": "U087HR246Q1",
+                "last_set": 1735880439
+            },
+            "properties": {
+                "canvas": {
+                    "file_id": "F086QJXCQJK",
+                    "quip_thread_id": "GdK9AAjw8bv"
+                },
+                "use_case": "project"
+            },
+            "previous_names": [],
+            "num_members": 5
+        },
+        {
+            "id": "C087HR2519P",
+            "name": "social",
+            "is_channel": true,
+            "is_group": false,
+            "is_im": false,
+            "is_mpim": false,
+            "is_private": false,
+            "created": 1735880164,
+            "is_archived": false,
+            "is_general": false,
+            "unlinked": 0,
+            "name_normalized": "social",
+            "is_shared": false,
+            "is_org_shared": false,
+            "is_pending_ext_shared": false,
+            "pending_shared": [],
+            "context_team_id": "T086QJLMH2T",
+            "updated": 1735880167793,
+            "parent_conversation": null,
+            "creator": "U087HR246Q1",
+            "is_ext_shared": false,
+            "shared_team_ids": [
+                "T086QJLMH2T"
+            ],
+            "pending_connected_team_ids": [],
+            "is_member": false,
+            "topic": {
+                "value": "",
+                "creator": "",
+                "last_set": 0
+            },
+            "purpose": {
+                "value": "Other channels are for work. This one\u2019s just for fun. Get to know your teammates and show your lighter side. \ud83c\udf88",
+                "creator": "U087HR246Q1",
+                "last_set": 1735880164
+            },
+            "properties": {
+                "canvas": {
+                    "file_id": "F087TUQJXCY",
+                    "is_empty": false,
+                    "quip_thread_id": "aCY9AA8dEYo"
+                },
+                "use_case": "random"
+            },
+            "previous_names": [],
+            "num_members": 5
+        }
+    ],
+    "response_metadata": {
+        "next_cursor": ""
+    }
+}
