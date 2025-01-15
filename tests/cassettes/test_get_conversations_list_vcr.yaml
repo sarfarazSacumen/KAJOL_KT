@@ -7,7 +7,7 @@ interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer xoxb-8228632731095-8243326122850-6C6zj2o4OEQTJZF4ybCswzn6
+      - Bearer Actual token
       Connection:
       - keep-alive
       User-Agent:
