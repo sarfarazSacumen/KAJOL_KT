@@ -1,7 +1,7 @@
 """Writing test cases for Slack API
 """
 from src.fetch import slack
-from tests.mocks.mock_function import mock_api_success
+from tests.mocks.functions import mock_api_success
 import pytest
 
 def test_add_success():
@@ -53,4 +53,26 @@ def test_get_conversations_list_vcr():
     """
     base_url = "https://slack.com/api"
     response = slack.get_conversations_list(base_url)
+    assert response.status_code == 200
+
+def test_get_user_list_success():
+    """Test case for successfully getting response
+    """
+    base_url = "https://slack.com/api"
+    response = slack.get_user_list(base_url)
+    assert response.status_code == 200
+
+def test_get_user_list_fail():
+    """test case for requested resource not found
+    """
+    base_url = "https://slack.com/apl"
+    response = slack.get_user_list(base_url)
+    assert response.status_code == 404
+
+@pytest.mark.vcr()
+def test_get_user_list_vcr():
+    """Test case for mocking using vcr
+    """
+    base_url = "https://slack.com/api"
+    response = slack.get_user_list(base_url)
     assert response.status_code == 200

@@ -72,8 +72,14 @@ class Slack:
         try:
             session.mount(f"{base_url}/users.list", slack_adapter)
             response = session.get(f"{base_url}/users.list?limit=1&offset=1", headers = self.headers, timeout = 3)
+
+            if response.status_code != 200:
+                self.logger.error(f"HTTP Error: {response.status_code} for URL: {response.url}")
+                return response
+            
         except Exception as e:
             self.logger.exception(f"{e}")
+            return None
         
         self.logger.debug(f"URL = {response.url}")
         self.logger.debug(f"Status code = {response.status_code}")
@@ -84,6 +90,8 @@ class Slack:
             self.logger.info(f"JSON Data = {json_pretty}")
         except Exception as e:
             self.logger.error(f"Content Not Found {e}", exc_info=True)
+            return None
+        
         return response
 
     def add(self, a: int, b: int) -> int:
@@ -98,6 +106,6 @@ class Slack:
         """
         return a+b
 
-access_token = "xoxb-8228632731095-8243326122850-6C6zj2o4OEQTJZF4ybCswzn6"
+access_token = "xoxb-8228632731095-8243326122850-gkLhuStsPZcPlvGljOZ0Qoe4"
 
 slack = Slack(access_token)
