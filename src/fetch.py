@@ -106,6 +106,4 @@ class Slack:
         """
         return a+b
 
-
-
 slack = Slack("token")
