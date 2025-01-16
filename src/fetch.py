@@ -106,6 +106,6 @@ class Slack:
         """
         return a+b
 
-access_token = "xoxb-8228632731095-8243326122850-gkLhuStsPZcPlvGljOZ0Qoe4"
 
-slack = Slack(access_token)
+
+slack = Slack("token")

@@ -6,8 +6,7 @@ interactions:
       - '*/*'
       Accept-Encoding:
       - gzip, deflate
-      Authorization:
-      - Bearer xoxb-8228632731095-8243326122850-gkLhuStsPZcPlvGljOZ0Qoe4
+      #removed auth token
       Connection:
       - keep-alive
       User-Agent:
